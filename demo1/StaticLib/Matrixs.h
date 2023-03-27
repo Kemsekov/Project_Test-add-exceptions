@@ -19,8 +19,8 @@ public:
 	Matrixs(const UINT rows, const UINT cols); // Constructor
 	Matrixs(const Matrixs& other); // Constructor copying
 	void SetSizeMatrix(const UINT rows, const UINT cols);
-	UINT GetRows() { return rows; }
-	UINT GetCols() { return cols; }
+	UINT GetRows() const { return rows; }
+	UINT GetCols() const { return cols; }
 	float OutputElement(const UINT row, const UINT col); // The matrix element output 
 	void InputElementMatrix(const float value, UINT row = 0, UINT col = 0); // The matrix element input
 	Matrixs T(); // Transposition matrix
